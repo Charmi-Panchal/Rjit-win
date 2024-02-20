@@ -1,0 +1,180 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #fae1dd; */
+    background-size: cover;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231103/pngtree-love-message-embrace-romantic-elegance-with-flower-paper-texture-background-image_13812243.png");
+  }
+  
+  .container {
+    position: relative;
+    right: 500px;
+  }
+  .valentines {
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    animation: up 3s linear infinite;
+  }
+  
+  /* Style the envelope and the card */
+  .envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+     background-color: #7b664ef7; 
+   
+   /* background-image: url("https://img.pikbest.com/backgrounds/20200514/vintage-214-valentine-s-day-love-letter-letter-paper-poster_2856682.jpg!sw800"); */
+  }
+  
+  .envelope:before {
+    background-color: #7b664ef7;
+    /* background-image: url("https://img.pikbest.com/backgrounds/20200514/vintage-214-valentine-s-day-love-letter-letter-paper-poster_2856682.jpg!sw800"); */
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    transform: rotate(45deg);
+    top: -105px;
+    left: 44px;
+    border-radius: 30px 0 0 0;
+  }
+  
+  .card {
+    position: absolute;
+    /* background-color: #eae2b7;
+     */
+     background-image: url("https://static.vecteezy.com/system/resources/previews/002/633/145/large_2x/the-texture-of-old-brown-crumpled-paper-photo.jpg");
+    width: 270px;
+    height: 170px;
+    top: 5px;
+    left: 15px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
+  }
+  
+  .text {
+    position: absolute;
+    font-family:  'Brush Script MT', cursive;
+    font-size: 28px;
+    text-align: center;
+    line-height: 25px;
+    top: 19px;
+    left: 85px;
+    color: #003049;
+  }
+  
+  .heart {
+    background-color: #d62828;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 110px;
+    left: 105px;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: #d62828;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }
+  .front {
+    position: absolute;
+    border-right: 180px solid #e2d9e191;
+    border-top: 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    left: 120px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+  }
+  
+  .front:before {
+    position: absolute;
+    content: "";
+    border-left: 300px solid #e2d9e191;
+    /* background-image: url("https://img.pikbest.com/backgrounds/20200514/vintage-214-valentine-s-day-love-letter-letter-paper-poster_2856682.jpg!sw800"); */
+    border-top: 195px solid transparent;
+    left: -120px;
+    top: -95px;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Add the shadow
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 250px;
+    left: 650px;
+    animation: scale 3s linear infinite;
+    z-index: -1;
+  } */
+  
+  /* To move the envelope up and down */
+  @keyframes up {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  /* to scale the shadow
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.85);
+    }
+  } */
+
+  button{
+     background-color: beige;
+     border-style: none;
+     height: 50px;
+     width: 80px;
+     position: relative;
+     border-radius: 20px;
+     right: 700px;
+     top: 200px;
+  }
